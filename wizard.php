@@ -1,0 +1,3 @@
+<?php
+
+die("cheguei aqui");
