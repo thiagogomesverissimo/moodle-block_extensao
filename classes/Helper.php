@@ -62,7 +62,7 @@ class Helper
         $newcourse->enddate = $newcourse->startdate + 130*3600*24; # 130 dias
         $newcourse->timemodified = time();
 
-        $category = self::set_category(2032);
+        $category = self::set_category(2020);
         $newcourse->category = $category->id;
                 
         return \create_course($newcourse);
