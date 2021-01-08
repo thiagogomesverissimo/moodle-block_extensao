@@ -12,6 +12,8 @@ $PAGE->set_url($url);
 $PAGE->set_context(context_system::instance());
 $PAGE->set_pagelayout('admin');
 
+require_login();
+
 # Primeiramente verificamos se a requisição é do tipo form
 $fullname = optional_param('nome_completo_form', false, PARAM_TEXT);
 $shortname = optional_param('nome_breve_form', false, PARAM_TEXT);
