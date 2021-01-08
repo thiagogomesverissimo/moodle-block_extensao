@@ -22,13 +22,13 @@
       <legend class="col-form-label col-sm-2 pt-0">Ambiente Aberto para Visitantes (e Google)?</legend>
       <div class="col-sm-10">
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="visible_form" value="1" checked>
+          <input class="form-check-input" type="radio" name="visible_form" value="sim" checked>
           <label class="form-check-label">
             Sim
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="visible_form" value="0">
+          <input class="form-check-input" type="radio" name="visible_form" value="nao">
           <label class="form-check-label">
             Não
           </label>

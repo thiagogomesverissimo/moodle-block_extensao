@@ -46,7 +46,13 @@ class Helper
         $newcourse->description = $course->description;
         $newcourse->summary = $course->summary;
         $newcourse->idnumber = $course->idnumber;
-        $newcourse->visible = $course->visible;
+
+        if($course->visible== 'nao') {
+            $newcourse->visible = 0;
+        } else {
+            $newcourse->visible = 1;
+        }
+        
 
         $newcourse->format = get_config('moodlecourse', 'format');
         $newcourse->numsections = get_config('moodlecourse', 'numsections');

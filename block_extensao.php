@@ -14,9 +14,6 @@ class block_extensao extends block_base {
     public function get_content() {
         global $USER;
         
-        #echo "<pre>"; var_dump(Sybase::oferecimentos('450312'));die();
-        #echo "<pre>"; var_dump();die();
-
         $this->content =  new stdClass;
 
         $codpes = $USER->profile['codpes'];

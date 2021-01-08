@@ -15,7 +15,7 @@ $PAGE->set_pagelayout('admin');
 # Primeiramente verificamos se a requisição é do tipo form
 $fullname = optional_param('nome_completo_form', false, PARAM_TEXT);
 $shortname = optional_param('nome_breve_form', false, PARAM_TEXT);
-$visible = optional_param('visible_form', false, PARAM_INT);
+$visible = optional_param('visible_form', false, PARAM_TEXT);
 $oferecimento = optional_param('oferecimento_form', false, PARAM_INT);
 
 if(!empty($fullname) && !empty($shortname) && !empty($visible) && !empty($oferecimento)){
